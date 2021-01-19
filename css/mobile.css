@@ -332,11 +332,12 @@ small {
 #background {
   background-color: #F7F7F7; }
 
-.wrapper {
+/*.wrapper {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
 
 a {
   background-color: lightblue;
@@ -357,11 +358,13 @@ a {
   color: #333;
   letter-spacing: 2px;
   position: relative;
-  transition: all .35s; }
+  transition: all .35s;
+}
 
 a span {
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+}
 
 a:after {
   position: absolute;
@@ -374,13 +377,16 @@ a:after {
   transition: all .35s;
   visibility: hidden;
   padding-top: 1.5px;
-  padding-left: 10px;
-  padding-bottom: 1px;
-  border-radius: 0px 23px 23px 0px; }
+	padding-left: 10px;
+	padding-bottom: 1px;
+	border-radius: 0px 23px 23px 0px;;
+}
 
 a:hover:after {
   width: 15%;
-  visibility: visible; }
+  visibility: visible;
+}
+
 
 #check {
   right: 5px;
@@ -390,14 +396,20 @@ a:hover:after {
   z-index: 3;
   transition: right .35s;
   color: white;
-  font-size: 35px; }
+  font-size: 35px;
+}
 
 a:hover #check {
-  animation: spin .35s linear;
-  display: block; }
+   animation:spin .35s linear;
+   display: block;
+}
+
 
 @keyframes spin {
   0% {
-    transform: translate(25px) rotate(0deg); }
+    transform: translate(25px) rotate(0deg);
+  }
   100% {
-    transform: translate(0px) rotate(360deg); } }
+    transform: translate(0px) rotate(360deg);
+  }
+}*/
