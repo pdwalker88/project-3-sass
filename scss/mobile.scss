@@ -249,8 +249,8 @@ small {
 }
 
 .heart-menu:hover {
-      background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
-      -webkit-background-clip: text;
+      // background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
+      // -webkit-background-clip: text;
 }
 
 .heart-menu:hover .far,
@@ -261,9 +261,9 @@ small {
       -webkit-background-clip: text;
   }
 
-.heart-menu:hover .fa {
-    display: block;
-   }
+// .heart-menu:hover .fa {
+//     display: block;
+//    }
 
 .flex-container {
   display: flex;
@@ -276,6 +276,13 @@ small {
 	left: 30px;
 }
 
+#heart-box{
+	position:relative;
+	right:80px;
+	top:-5px;
+	margin:0;
+	padding:0;
+}
 
 
 .menu-page-image {
@@ -293,10 +300,10 @@ small {
 
 }
 
-.far fa-heart {
-  position: relative;
+// .far fa-heart {
+//   position: relative;
 
-}
+// }
 
 .menu-container {
 	background-color: #F7F7F7;
