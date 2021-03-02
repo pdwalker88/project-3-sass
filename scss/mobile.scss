@@ -3,10 +3,22 @@ $font_family_1: Lucida Bright;
 $font_family_2: Calibri;
 $font_family_3: sans-serif;
 $font_family_4: helvetica;
+$font-family_5: Roboto;
 $background_color_1: #FBFBFB;
 $background_color_2: #383B3D;
 $background_color_3: lightblue;
 $background_color_4: black;
+
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+div {
+  font-family: Roboto;
+}
+
 
 .loading-container {
   position: absolute;
@@ -88,8 +100,8 @@ a {
 	text-decoration: none;
 }
 strong {
-	font-family: $font_family_3;
-	font-size: 23px;
+	font-family: Arial;
+	font-size: 18px;
 }
 i {
 	padding-right: 14px;
@@ -97,6 +109,8 @@ i {
 p {
 	font-family: $font_family_4;
 	text-align: left;
+	letter-spacing: -1px;
+	line-height:10px;
 }
 
 small {
@@ -188,6 +202,8 @@ small {
 	margin-top: 30px;
 	line-height: 0.2;
 	box-shadow: 5px 8px 5px 1px #EDE9E9;
+	font-family: Shrikhand;
+	border-radius: 40px 40px 0px 0px;
 }
 
 .menu-image {
@@ -230,8 +246,14 @@ small {
    }
 
 
-
 /*----menu css----*/
+
+.restaurant-name {
+	text-align: left;
+	padding-left: 20px;
+	font-family: Shrikhand;
+}
+
 #heart-id {
   position: relative;
   left: 0px;
@@ -242,10 +264,6 @@ small {
 	position: relative;
 	float: right;
 	display: inline;
-	/*background-color: red;*/
-	/*width: 90px;*/
-	/*left: 420px;*/
-	/*bottom: 38px;*/
 }
 
 .heart-menu:hover {
@@ -272,20 +290,19 @@ small {
 
 .flex-container > div {
 	position: absolute;
-	top: 27px;
+	top: 15px;
 	left: 30px;
 }
 
-
-
-.menu-page-image {
-	padding-bottom: 3px;
-	height: 300px;
-	width: 467px;
+.fa-arrow-left{
+	color: black;
 }
 
-.restaurant-name {
-	/*text-align: center;*/
+.menu-page-image {
+	height: 300px;
+	width: 474px;
+	top: 50px;
+	position: relative;
 }
 
 .fa-heart {
@@ -298,13 +315,24 @@ small {
 
 }
 
-.menu-container {
+#heart-box {
+  position: relative;
+  right: 75px;
+  top: -15px;
+  margin: 0;
+  padding: 0;
+  color: #c7c3c8;
+}
+
+#background {
 	background-color: #F7F7F7;
-	position: relative;
-	top: -100px;
-	font-family: Shrikhand;
-	font-size: 15px;
+	position: absolute;
 	border-radius: 40px 40px 0px 0px;
+	z-index: 2;
+}
+
+.menu-container {
+	font-size: 15px;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -315,6 +343,7 @@ small {
 .part {
 	 font-family: $font_family_1;
 	 position: relative;
+	 padding-top: 30px;
 }
 
 .underline {
@@ -329,17 +358,11 @@ small {
 }
 
 .food {
-    opacity:0;
-	font-family: $font_family_1;
-	line-height: 12px;
-	padding-top: 1.5px;
-	padding-left: 10px;
-	padding-bottom: 1px;
-	border-radius: 23px;
-	text-align: left;
+    
+    opacity: 0;
 	height: 90px;
+	text-align: left;
 	margin: auto;
-	box-shadow: 0.7px 5px #EDE9E9;
 	margin-top: 17px;
 	position: relative;
     animation-name: load;
@@ -359,8 +382,8 @@ small {
 .food:nth-child(4) { animation-delay: 4.5s }
 
 #btn-container {
-	padding-top: 53px;
-	padding-bottom: 75px;
+	padding-top: 100px;
+	padding-bottom: 25px;
 }
 
 #order-btn {
@@ -376,19 +399,8 @@ small {
 	box-shadow: 5px 8px 5px 1px #EDE9E9;
 }
 
-#background {
-	background-color: #F7F7F7;
-}
-
-.wrapper {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-a {
-  background-color: lightblue;
+.anime {
+  background-color: white;
   padding-top: 1.5px;
   padding-left: 10px;
   padding-bottom: 1px;
@@ -399,9 +411,9 @@ a {
   display: block;
   width: 445px;
   height: 90px;
-  line-height: 12px;
+  line-height:-10px;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: Arial;
   text-decoration: none;
   color: #333;
   letter-spacing: 2px;
@@ -409,12 +421,13 @@ a {
   transition: all .35s;
 }
 
-a span {
+.anime span {
   position: relative;
   z-index: 2;
+  font-family: $font_family_1;
 }
 
-a:after {
+.anime:after {
   position: absolute;
   content: "";
   top: 0;
@@ -427,10 +440,11 @@ a:after {
   padding-top: 1.5px;
 	padding-left: 10px;
 	padding-bottom: 1px;
-	border-radius: 0px 23px 23px 0px;;
+	border-radius: 0px 23px 23px 0px;
+	font-family: $font-family_5;
 }
 
-a:hover:after {
+.anime:hover:after {
   width: 15%;
   visibility: visible;
 }
@@ -447,7 +461,7 @@ a:hover:after {
   font-size: 35px;
 }
 
-a:hover #check {
+.anime:hover #check {
    animation:spin .35s linear;
    display: block;
 }
@@ -460,4 +474,19 @@ a:hover #check {
   100% {
     transform: translate(0px) rotate(360deg);
   }
+} 
+
+.price {
+	position: relative;
+	right: 37px;
+	bottom: 20px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.ds-price {
+	position: relative;
+	text-align: right;
+	right: 78px;
+	bottom: 50px;
 }
