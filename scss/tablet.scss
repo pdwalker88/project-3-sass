@@ -3,10 +3,67 @@ $font_family_1: Lucida Bright;
 $font_family_2: Calibri;
 $font_family_3: sans-serif;
 $font_family_4: helvetica;
+$font-family_5: Roboto;
 $background_color_1: #FBFBFB;
 $background_color_2: #383B3D;
 $background_color_3: lightblue;
 $background_color_4: black;
+
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+div {
+  font-family: Roboto;
+}
+
+
+.loading-container {
+  position: absolute;
+  opacity:0;
+  animation: mymove 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes mymove {
+  from {opacity:0;}
+  to {opacity:1 }
+}
+
+#spinner {
+	position: relative;
+	left: 130px;
+	top: 200px;
+}
+
+#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 2s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
 
 .container {
 	font-family: $font_family_1;
@@ -43,8 +100,8 @@ a {
 	text-decoration: none;
 }
 strong {
-	font-family: $font_family_3;
-	font-size: 23px;
+	font-family: Arial;
+	font-size: 18px;
 }
 i {
 	padding-right: 14px;
@@ -52,6 +109,8 @@ i {
 p {
 	font-family: $font_family_4;
 	text-align: left;
+	letter-spacing: -1px;
+	line-height:10px;
 }
 
 small {
@@ -143,6 +202,8 @@ small {
 	margin-top: 30px;
 	line-height: 0.2;
 	box-shadow: 5px 8px 5px 1px #EDE9E9;
+	font-family: Shrikhand;
+	border-radius: 40px 40px 0px 0px;
 }
 
 .menu-image {
@@ -167,26 +228,60 @@ small {
   top: -30px;
 }
 
-.heart:hover {
-      background-image: linear-gradient(168deg, #FF79DA, #9356DC);
+.heart-home:hover {
+      background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
+      -webkit-background-clip: text;
 }
 
-.heart:hover .far,
+.heart-home:hover .far,
 
-.heart  .fa {
+.heart-home  .fa {
     display: none;
-    background-image: linear-gradient(168deg, #FF79DA, #9356DC);
-}
+    background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
+      -webkit-background-clip: text;
+  }
 
-.heart:hover .fa {
+.heart-home:hover .fa {
     display: block;
    }
 
 
-
 /*----menu css----*/
 
+.restaurant-name {
+	text-align: left;
+	padding-left: 20px;
+	font-family: Shrikhand;
+}
 
+#heart-id {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.heart-menu {
+	position: relative;
+	float: right;
+	display: inline;
+}
+
+.heart-menu:hover {
+      background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
+      -webkit-background-clip: text;
+}
+
+.heart-menu:hover .far,
+
+.heart-menu  .fa {
+    display: none;
+    background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
+      -webkit-background-clip: text;
+  }
+
+.heart-menu:hover .fa {
+    display: block;
+   }
 
 .flex-container {
   display: flex;
@@ -195,67 +290,105 @@ small {
 
 .flex-container > div {
 	position: absolute;
-	top: 27px;
+	top: 15px;
 	left: 30px;
 }
 
-
+.fa-arrow-left{
+	color: black;
+}
 
 .menu-page-image {
-	padding-bottom: 3px;
 	height: 300px;
-	width: 467px;
+	width: 474px;
+	top: 50px;
+	position: relative;
+}
+
+.fa-heart {
+  position: relative;
+
+}
+
+.far fa-heart {
+  position: relative;
+
+}
+
+#heart-box {
+  position: relative;
+  right: 75px;
+  top: -15px;
+  margin: 0;
+  padding: 0;
+  color: #c7c3c8;
+}
+
+#background {
+	background-color: #F7F7F7;
+	position: absolute;
+	border-radius: 40px 40px 0px 0px;
+	z-index: 2;
 }
 
 .menu-container {
-	background-color: #F7F7F7;
-	position: relative;
-	top: -100px;
-	font-family: Shrikhand;
 	font-size: 15px;
-	text-align: center;
-	border-radius: 40px 40px 0px 0px;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 100px;
+	text-align: center;
 }
 
 .part {
 	 font-family: $font_family_1;
-	 border-bottom: solid #99E2D0;
-	 width: 20%;
-	 margin-top: 30px;
+	 position: relative;
+	 padding-top: 30px;
+}
+
+.underline {
+  background-color: #99E2D0;
+  position: relative;
+  height: 4px;
+  border: none;
+  width: 40px;
+  bottom: 7px;
+  text-align: left;
+  margin: 0px;
 }
 
 .food {
-	font-family: $font_family_1;
-	line-height: 12px;
-	padding-top: 1.5px;
-	padding-left: 10px;
-	padding-bottom: 1px;
-	border-radius: 23px;
+    
+    opacity: 0;
 	height: 90px;
 	text-align: left;
-	box-shadow: 0.7px 5px #EDE9E9;
 	margin: auto;
 	margin-top: 17px;
+	position: relative;
+    animation-name: load;
+    animation-duration: 0.5s;  
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
 }
 
-.money-btn {
-	font-family: $font_family_4;
-	position: relative;
-	left: 375px;
-	top: -30px;
+@keyframes load {
+  from {bottom: -100px; opacity: 0;}
+  to {bottom: 0px; background-color: #F7F7F7;  opacity: 1;}
 }
+
+.food:nth-child(1) { animation-delay: 3s }
+.food:nth-child(2) { animation-delay: 3.5s }
+.food:nth-child(3) { animation-delay: 4s }
+.food:nth-child(4) { animation-delay: 4.5s }
 
 #btn-container {
-	padding-top: 53px;
-	padding-bottom: 75px;
+	padding-top: 100px;
+	padding-bottom: 25px;
 }
 
 #order-btn {
 	font-size: 17.5px;
+	text-align: center;
 	font-family: $font_family_2;
 	color: $color_1;
 	width: 200px;
@@ -266,6 +399,94 @@ small {
 	box-shadow: 5px 8px 5px 1px #EDE9E9;
 }
 
-#background {
-	background-color: #F7F7F7;
+.anime {
+  background-color: white;
+  padding-top: 1.5px;
+  padding-left: 10px;
+  padding-bottom: 1px;
+  border-radius: 23px;
+  text-align: left;
+  margin: auto;
+  box-shadow: 0.7px 5px #EDE9E9;
+  display: block;
+  width: 445px;
+  height: 90px;
+  line-height:-10px;
+  font-size: 18px;
+  font-family: Arial;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all .35s;
+}
+
+.anime span {
+  position: relative;
+  z-index: 2;
+  font-family: $font_family_1;
+}
+
+.anime:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 90px;
+  background: #99E2D0;
+  transition: all .35s;
+  visibility: hidden;
+  padding-top: 1.5px;
+	padding-left: 10px;
+	padding-bottom: 1px;
+	border-radius: 0px 23px 23px 0px;
+	font-family: $font-family_5;
+}
+
+.anime:hover:after {
+  width: 15%;
+  visibility: visible;
+}
+
+
+#check {
+  right: 5px;
+  top: 30px;
+  position: absolute;
+  display: none;
+  z-index: 3;
+  transition: right .35s;
+  color: white;
+  font-size: 35px;
+}
+
+.anime:hover #check {
+   animation:spin .35s linear;
+   display: block;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: translate(25px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px) rotate(360deg);
+  }
+} 
+
+.price {
+	position: relative;
+	right: 37px;
+	bottom: 20px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.ds-price {
+	position: relative;
+	text-align: right;
+	right: 78px;
+	bottom: 50px;
 }

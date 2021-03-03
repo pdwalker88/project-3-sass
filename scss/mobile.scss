@@ -3,10 +3,22 @@ $font_family_1: Lucida Bright;
 $font_family_2: Calibri;
 $font_family_3: sans-serif;
 $font_family_4: helvetica;
+$font-family_5: Roboto;
 $background_color_1: #FBFBFB;
 $background_color_2: #383B3D;
 $background_color_3: lightblue;
 $background_color_4: black;
+
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+div {
+  font-family: Roboto;
+}
+
 
 .loading-container {
   position: absolute;
@@ -88,8 +100,8 @@ a {
 	text-decoration: none;
 }
 strong {
-	font-family: $font_family_3;
-	font-size: 23px;
+	font-family: Arial;
+	font-size: 18px;
 }
 i {
 	padding-right: 14px;
@@ -97,6 +109,8 @@ i {
 p {
 	font-family: $font_family_4;
 	text-align: left;
+	letter-spacing: -1px;
+	line-height:10px;
 }
 
 small {
@@ -188,6 +202,8 @@ small {
 	margin-top: 30px;
 	line-height: 0.2;
 	box-shadow: 5px 8px 5px 1px #EDE9E9;
+	font-family: Shrikhand;
+	border-radius: 40px 40px 0px 0px;
 }
 
 .menu-image {
@@ -232,6 +248,11 @@ small {
 
 /*----menu css----*/
 
+.restaurant-name {
+	text-align: left;
+	padding-left: 20px;
+	font-family: Shrikhand;
+}
 
 #heart-id {
   position: relative;
@@ -243,10 +264,6 @@ small {
 	position: relative;
 	float: right;
 	display: inline;
-	/*background-color: red;*/
-	/*width: 90px;*/
-	/*left: 420px;*/
-	/*bottom: 38px;*/
 }
 
 .heart-menu:hover {
@@ -273,21 +290,19 @@ small {
 
 .flex-container > div {
 	position: absolute;
-	top: 27px;
+	top: 15px;
 	left: 30px;
 }
 
-
+.fa-arrow-left{
+	color: black;
+}
 
 .menu-page-image {
 	height: 300px;
 	width: 474px;
 	top: 50px;
-	z-index: 1;
-}
-
-.restaurant-name {
-	/*text-align: center;*/
+	position: relative;
 }
 
 .fa-heart {
@@ -300,16 +315,23 @@ small {
 
 }
 
+#heart-box {
+  position: relative;
+  right: 75px;
+  top: -15px;
+  margin: 0;
+  padding: 0;
+  color: #c7c3c8;
+}
+
 #background {
-	// background-color: #F7F7F7;
+	background-color: #F7F7F7;
 	position: absolute;
-	background-color: blue;
 	border-radius: 40px 40px 0px 0px;
 	z-index: 2;
 }
 
 .menu-container {
-	font-family: Shrikhand;
 	font-size: 15px;
 	padding-top: 10px;
 	padding-left: 10px;
@@ -336,12 +358,8 @@ small {
 }
 
 .food {
+    
     opacity: 0;
-	// font-family: $font_family_1;
-	// padding-top: 1.5px;
-	// padding-left: 10px;
-	// padding-bottom: 1px;
-	// border-radius: 23px;
 	height: 90px;
 	text-align: left;
 	margin: auto;
@@ -381,16 +399,6 @@ small {
 	box-shadow: 5px 8px 5px 1px #EDE9E9;
 }
 
-// .wrapper {
-// 	background-color: green;
-//   position: fixed;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
-
-
-
 .anime {
   background-color: white;
   padding-top: 1.5px;
@@ -403,9 +411,9 @@ small {
   display: block;
   width: 445px;
   height: 90px;
-  line-height: 12px;
+  line-height:-10px;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: Arial;
   text-decoration: none;
   color: #333;
   letter-spacing: 2px;
@@ -432,7 +440,8 @@ small {
   padding-top: 1.5px;
 	padding-left: 10px;
 	padding-bottom: 1px;
-	border-radius: 0px 23px 23px 0px;;
+	border-radius: 0px 23px 23px 0px;
+	font-family: $font-family_5;
 }
 
 .anime:hover:after {
@@ -466,3 +475,18 @@ small {
     transform: translate(0px) rotate(360deg);
   }
 } 
+
+.price {
+	position: relative;
+	right: 37px;
+	bottom: 20px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.ds-price {
+	position: relative;
+	text-align: right;
+	right: 78px;
+	bottom: 50px;
+}

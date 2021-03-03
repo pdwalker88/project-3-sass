@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf); }
+
+div {
+  font-family: Roboto; }
+
 .loading-container {
   position: absolute;
   opacity: 0;
@@ -72,15 +79,17 @@ a {
   text-decoration: none; }
 
 strong {
-  font-family: sans-serif;
-  font-size: 23px; }
+  font-family: Arial;
+  font-size: 18px; }
 
 i {
   padding-right: 14px; }
 
 p {
   font-family: helvetica;
-  text-align: left; }
+  text-align: left;
+  letter-spacing: -1px;
+  line-height: 10px; }
 
 small {
   position: relative;
@@ -162,7 +171,9 @@ small {
   margin: auto;
   margin-top: 30px;
   line-height: 0.2;
-  box-shadow: 5px 8px 5px 1px #EDE9E9; }
+  box-shadow: 5px 8px 5px 1px #EDE9E9;
+  font-family: Shrikhand;
+  border-radius: 40px 40px 0px 0px; }
 
 .menu-image {
   padding-top: 0%;
@@ -196,6 +207,11 @@ small {
   display: block; }
 
 /*----menu css----*/
+.restaurant-name {
+  text-align: left;
+  padding-left: 20px;
+  font-family: Shrikhand; }
+
 #heart-id {
   position: relative;
   left: 0px;
@@ -204,11 +220,7 @@ small {
 .heart-menu {
   position: relative;
   float: right;
-  display: inline;
-  /*background-color: red;*/
-  /*width: 90px;*/
-  /*left: 420px;*/
-  /*bottom: 38px;*/ }
+  display: inline; }
 
 .heart-menu:hover {
   background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
@@ -229,17 +241,17 @@ small {
 
 .flex-container > div {
   position: absolute;
-  top: 27px;
+  top: 15px;
   left: 30px; }
+
+.fa-arrow-left {
+  color: black; }
 
 .menu-page-image {
   height: 300px;
   width: 474px;
   top: 50px;
-  z-index: 1; }
-
-.restaurant-name {
-  /*text-align: center;*/ }
+  position: relative; }
 
 .fa-heart {
   position: relative; }
@@ -247,14 +259,21 @@ small {
 .far fa-heart {
   position: relative; }
 
+#heart-box {
+  position: relative;
+  right: 75px;
+  top: -15px;
+  margin: 0;
+  padding: 0;
+  color: #c7c3c8; }
+
 #background {
+  background-color: #F7F7F7;
   position: absolute;
-  background-color: blue;
   border-radius: 40px 40px 0px 0px;
   z-index: 2; }
 
 .menu-container {
-  font-family: Shrikhand;
   font-size: 15px;
   padding-top: 10px;
   padding-left: 10px;
@@ -338,9 +357,9 @@ small {
   display: block;
   width: 445px;
   height: 90px;
-  line-height: 12px;
+  line-height: -10px;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: Arial;
   text-decoration: none;
   color: #333;
   letter-spacing: 2px;
@@ -365,7 +384,8 @@ small {
   padding-top: 1.5px;
   padding-left: 10px;
   padding-bottom: 1px;
-  border-radius: 0px 23px 23px 0px; }
+  border-radius: 0px 23px 23px 0px;
+  font-family: Roboto; }
 
 .anime:hover:after {
   width: 15%;
@@ -390,3 +410,16 @@ small {
     transform: translate(25px) rotate(0deg); }
   100% {
     transform: translate(0px) rotate(360deg); } }
+
+.price {
+  position: relative;
+  right: 37px;
+  bottom: 20px;
+  text-align: right;
+  padding-right: 40px; }
+
+.ds-price {
+  position: relative;
+  text-align: right;
+  right: 78px;
+  bottom: 50px; }

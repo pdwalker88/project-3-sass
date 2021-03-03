@@ -13,14 +13,6 @@ header {
   height: auto;
   text-align: center; }
 
-footer {
-  background-color: #383B3D;
-  border: medium;
-  color: white;
-  font-family: Calibri;
-  padding: 85px;
-  line-height: 1.5; }
-
 a {
   text-decoration: none; }
 
@@ -72,14 +64,6 @@ p {
 .restaurants {
   background-color: purple;
   text-indent: 30px; }
-
-.underline {
-  color: red !important; }
-
-.menu-container {
-  font-family: Shrikhand;
-  /*text-align: center;*/
-  border-radius: 40px 40px 0px 0px; }
 
 .section {
   font-family: Lucida Bright;
