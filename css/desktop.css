@@ -5,12 +5,23 @@
 div {
   font-family: Roboto; }
 
+html {
+  background-color: #B1B1B1; }
+
+body {
+  max-width: 1000px;
+  position: relative;
+  left: 450px; }
+
 .loading-container {
-  position: absolute;
+  position: center;
   opacity: 0;
   animation: mymove 1s;
   animation-fill-mode: forwards;
-  animation-delay: 2s; }
+  animation-delay: 2s;
+  background-color: white;
+  width: 990px;
+  height: 400px; }
 
 @keyframes mymove {
   from {
@@ -51,6 +62,11 @@ div {
   text-align: center;
   padding: 10%; }
 
+#container-text {
+  position: center;
+  font: helvetica;
+  padding: 5%; }
+
 img {
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -58,7 +74,8 @@ img {
 header {
   width: auto;
   height: auto;
-  text-align: center; }
+  text-align: center;
+  background-color: white; }
 
 .location {
   font-family: Lucida Bright;
@@ -73,14 +90,17 @@ footer {
   color: white;
   font-family: Calibri;
   padding: 85px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  text-align: center; }
 
 a {
   text-decoration: none; }
 
 strong {
   font-family: Arial;
-  font-size: 18px; }
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 20px; }
 
 i {
   padding-right: 14px; }
@@ -129,9 +149,12 @@ small {
   font-family: sans-serif;
   text-align: auto;
   display: block;
-  padding: 3%; }
+  padding: 3%;
+  background-color: white; }
 
 .btn-center {
+  position: relative;
+  left: 250px;
   width: 30%;
   display: grid;
   margin: 50px; }
@@ -141,7 +164,7 @@ small {
   background-color: #F7F7F7;
   font-size: 15px;
   text-align: left;
-  padding: 20px;
+  padding: 30px;
   border: none;
   display: center;
   width: 330px;
@@ -161,6 +184,10 @@ small {
   padding-top: 40px;
   padding-bottom: 60px; }
 
+#restaurant-text {
+  text-align: center;
+  padding: 5%; }
+
 .image-container {
   background-color: white;
   padding-top: 0%;
@@ -173,7 +200,7 @@ small {
   line-height: 0.2;
   box-shadow: 5px 8px 5px 1px #EDE9E9;
   font-family: Shrikhand;
-  border-radius: 40px 40px 0px 0px; }
+  border-radius: 40px 40px 25px 25px; }
 
 .menu-image {
   padding-top: 0%;
@@ -208,8 +235,8 @@ small {
 
 /*----menu css----*/
 .restaurant-name {
-  text-align: left;
-  padding-left: 20px;
+  text-align: center;
+  padding-right: 30px;
   font-family: Shrikhand; }
 
 #heart-id {
@@ -247,12 +274,6 @@ small {
 .fa-arrow-left {
   color: black; }
 
-.menu-page-image {
-  height: 300px;
-  width: 474px;
-  top: 50px;
-  position: relative; }
-
 .fa-heart {
   position: relative; }
 
@@ -267,13 +288,22 @@ small {
   padding: 0;
   color: #c7c3c8; }
 
+.menu-page-image {
+  height: 300px;
+  width: 474px;
+  top: 100px;
+  left: 200px;
+  border-radius: 40px 40px 0px 0px; }
+
 #background {
   background-color: #F7F7F7;
   position: absolute;
+  top: 350px;
   border-radius: 40px 40px 0px 0px;
   z-index: 2; }
 
 .menu-container {
+  width: 970px;
   font-size: 15px;
   padding-top: 10px;
   padding-left: 10px;
@@ -284,6 +314,7 @@ small {
 .part {
   font-family: Lucida Bright;
   position: relative;
+  left: 450px;
   padding-top: 30px; }
 
 .underline {
@@ -291,7 +322,7 @@ small {
   position: relative;
   height: 4px;
   border: none;
-  width: 40px;
+  width: 65px;
   bottom: 7px;
   text-align: left;
   margin: 0px; }

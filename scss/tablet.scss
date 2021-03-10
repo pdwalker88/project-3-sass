@@ -19,13 +19,24 @@ div {
   font-family: Roboto;
 }
 
+html {
+	background-color: #B1B1B1;
+}
+
+body {
+	max-width: 500px;
+	position: relative;
+    left: 150px;
+}
 
 .loading-container {
-  position: absolute;
+  position: center;
   opacity:0;
   animation: mymove 1s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
+  background-color: white;
+  width: 474px;
 }
 
 @keyframes mymove {
@@ -70,6 +81,14 @@ div {
 	text-align: center;
 	padding: 10%;
 }
+
+#container-text {
+	position: center;
+	font: $font_family_4;
+	padding: 5%;
+}
+
+
 img {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -78,6 +97,8 @@ header {
 	width: auto;
 	height: auto;
 	text-align: center;
+	background-color: white;
+	width: 474px;
 }
 
 .location {
@@ -94,6 +115,7 @@ footer {
 	font-family: $font_family_2;
 	padding: 85px;
 	line-height: 1.5;
+	text-align: center;
 }
 
 a {
@@ -102,6 +124,8 @@ a {
 strong {
 	font-family: Arial;
 	font-size: 18px;
+	text-align: center;
+	padding-bottom: 20px;
 }
 i {
 	padding-right: 14px;
@@ -155,10 +179,11 @@ small {
 	text-align: auto;
 	display: block;
 	padding: 3%;
+	background-color: white;
 }
 
 .btn-center{
-	width: 30%;
+	position: relative;
 	display: grid;
 	margin: 50px;
 }
@@ -168,7 +193,7 @@ small {
 	background-color: #F7F7F7;
 	font-size: 15px;
 	text-align: left;
-	padding: 20px;
+	padding: 30px;
 	border: none;
 	display: center;
 	width: 330px;
@@ -191,6 +216,11 @@ small {
 	padding-bottom: 60px;
 }
 
+#restaurant-text {
+	text-align: center;
+	padding: 5%;
+}
+
 .image-container {
 	background-color: $color_1;
 	padding-top: 0%;
@@ -203,7 +233,7 @@ small {
 	line-height: 0.2;
 	box-shadow: 5px 8px 5px 1px #EDE9E9;
 	font-family: Shrikhand;
-	border-radius: 40px 40px 0px 0px;
+	border-radius: 40px 40px 25px 25px;
 }
 
 .menu-image {
@@ -298,13 +328,6 @@ small {
 	color: black;
 }
 
-.menu-page-image {
-	height: 300px;
-	width: 474px;
-	top: 50px;
-	position: relative;
-}
-
 .fa-heart {
   position: relative;
 
@@ -324,11 +347,19 @@ small {
   color: #c7c3c8;
 }
 
+.menu-page-image {
+	height: 300px;
+	width: 474px;
+	top: 50px;
+	position: relative;
+}
+
 #background {
 	background-color: #F7F7F7;
 	position: absolute;
+	left: 13px;
+	width: 474px;
 	border-radius: 40px 40px 0px 0px;
-	z-index: 2;
 }
 
 .menu-container {
