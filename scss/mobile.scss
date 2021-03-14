@@ -19,6 +19,10 @@ div {
   font-family: Roboto;
 }
 
+body {
+	position: relative;
+}
+
 
 .loading-container {
   position: absolute;
@@ -90,6 +94,7 @@ header {
 footer {
 	background-color: $background_color_2;
 	border: medium;
+	height: full;
 	color: $color_1;
 	font-family: $font_family_2;
 	padding: 85px;
@@ -336,7 +341,6 @@ small {
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 100px;
 	text-align: center;
 }
 
@@ -450,7 +454,7 @@ small {
 }
 
 
-#check {
+.check {
   right: 5px;
   top: 30px;
   position: absolute;
@@ -461,7 +465,7 @@ small {
   font-size: 35px;
 }
 
-.anime:hover #check {
+.anime:hover .check {
    animation:spin .35s linear;
    display: block;
 }
