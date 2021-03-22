@@ -9,9 +9,9 @@ html {
   background-color: #B1B1B1; }
 
 body {
-  max-width: 1000px;
-  position: relative;
-  left: 450px; }
+  position: absolute;
+  left: 20%;
+  right: 20%; }
 
 .loading-container {
   position: center;
@@ -31,8 +31,7 @@ body {
 
 #spinner {
   position: relative;
-  left: 130px;
-  top: 200px; }
+  top: 50%; }
 
 #hideMe {
   -moz-animation: cssAnimation 0s ease-in 2s forwards;
@@ -269,7 +268,7 @@ small {
 .flex-container > div {
   position: absolute;
   top: 15px;
-  left: 30px; }
+  left: 130px; }
 
 .fa-arrow-left {
   color: black; }
@@ -421,7 +420,7 @@ small {
   width: 15%;
   visibility: visible; }
 
-#check {
+.check {
   right: 5px;
   top: 30px;
   position: absolute;
@@ -431,7 +430,7 @@ small {
   color: white;
   font-size: 35px; }
 
-.anime:hover #check {
+.anime:hover .check {
   animation: spin .35s linear;
   display: block; }
 
