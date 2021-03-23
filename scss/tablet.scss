@@ -24,13 +24,14 @@ html {
 }
 
 body {
-	max-width: 500px;
-	position: relative;
-    left: 150px;
+	position: absolute;
+    left: 10%;
+    right: 10%;
 }
 
 .loading-container {
-  position: center;
+  position: absolute;
+  left: 100px;
   opacity:0;
   animation: mymove 1s;
   animation-fill-mode: forwards;
@@ -46,8 +47,6 @@ body {
 
 #spinner {
 	position: relative;
-	left: 130px;
-	top: 200px;
 }
 
 #hideMe {
@@ -278,6 +277,7 @@ small {
 
 /*----menu css----*/
 
+
 .restaurant-name {
 	text-align: left;
 	padding-left: 20px;
@@ -357,12 +357,12 @@ small {
 #background {
 	background-color: #F7F7F7;
 	position: absolute;
-	left: 13px;
 	width: 474px;
 	border-radius: 40px 40px 0px 0px;
 }
 
 .menu-container {
+	position: center;
 	font-size: 15px;
 	padding-top: 10px;
 	padding-left: 10px;
@@ -388,7 +388,6 @@ small {
 }
 
 .food {
-    
     opacity: 0;
 	height: 90px;
 	text-align: left;
@@ -480,7 +479,7 @@ small {
 }
 
 
-#check {
+.check {
   right: 5px;
   top: 30px;
   position: absolute;
@@ -491,7 +490,7 @@ small {
   font-size: 35px;
 }
 
-.anime:hover #check {
+.anime:hover .check {
    animation:spin .35s linear;
    display: block;
 }

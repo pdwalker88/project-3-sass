@@ -6,7 +6,9 @@ div {
   font-family: Roboto; }
 
 body {
-  position: relative; }
+  position: relative;
+  left: 10%;
+  right: 3%; }
 
 .loading-container {
   position: absolute;

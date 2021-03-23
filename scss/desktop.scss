@@ -24,9 +24,9 @@ html {
 }
 
 body {
-	max-width: 1000px;
-	position: relative;
-    left: 450px;
+	position: absolute;
+    left: 20%;
+    right: 20%;
 }
 
 .loading-container {
@@ -47,8 +47,7 @@ body {
 
 #spinner {
 	position: relative;
-	left: 130px;
-	top: 200px;
+  top: 50%;
 }
 
 #hideMe {
@@ -323,7 +322,7 @@ small {
 .flex-container > div {
 	position: absolute;
 	top: 15px;
-	left: 30px;
+	left: 130px;
 }
 
 .fa-arrow-left{
@@ -485,7 +484,7 @@ small {
 }
 
 
-#check {
+.check {
   right: 5px;
   top: 30px;
   position: absolute;
@@ -496,7 +495,7 @@ small {
   font-size: 35px;
 }
 
-.anime:hover #check {
+.anime:hover .check {
    animation:spin .35s linear;
    display: block;
 }
