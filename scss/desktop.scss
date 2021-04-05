@@ -47,10 +47,12 @@ body {
 
 #spinner {
 	position: relative;
-  top: 50%;
+  top: 45%;
 }
 
 #hideMe {
+	position: relative;
+	left:50%;
     -moz-animation: cssAnimation 0s ease-in 2s forwards;
     /* Firefox */
     -webkit-animation: cssAnimation 0s ease-in 2s forwards;
@@ -349,10 +351,10 @@ small {
 }
 
 .menu-page-image {
+	position: relative;
 	height: 300px;
 	width: 474px;
-	top: 100px;
-	left: 200px;
+	left: 250px;
 	border-radius: 40px 40px 0px 0px
 }
 
