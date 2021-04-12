@@ -7,11 +7,10 @@ div {
 
 body {
   margin: 0 auto;
-  padding: 0;
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .loading-container {
-  position: absolute;
   opacity: 0;
   animation: mymove 1s;
   animation-fill-mode: forwards;
