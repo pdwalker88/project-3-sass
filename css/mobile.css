@@ -55,6 +55,9 @@ body {
   text-align: center;
   padding: 10%; }
 
+#container-text {
+  padding: 5%; }
+
 img {
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -73,12 +76,20 @@ header {
 
 footer {
   background-color: #383B3D;
-  border: medium;
-  height: full;
   color: white;
-  font-family: Calibri;
-  padding: 85px;
+  padding: 35px;
   line-height: 1.5; }
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: Calibri;
+  display: block; }
+
+.footer-icon {
+  color: white;
+  display: inline-block;
+  width: 15px; }
 
 a {
   text-decoration: none; }
@@ -87,6 +98,15 @@ strong {
   font-family: Arial;
   font-size: 18px; }
 
+h1 {
+  font-size: 25px; }
+
+h2 {
+  font-family: Arial; }
+
+h3 {
+  font-family: helvetica; }
+
 i {
   padding-right: 14px; }
 
@@ -94,7 +114,7 @@ p {
   font-family: helvetica;
   text-align: left;
   letter-spacing: -1px;
-  line-height: 10px; }
+  line-height: -10px; }
 
 small {
   position: relative;
@@ -168,7 +188,6 @@ small {
 
 .image-container {
   background-color: white;
-  padding-top: 0%;
   padding-bottom: 75px;
   border-radius: 20px;
   width: 340px;
@@ -177,7 +196,6 @@ small {
   margin-top: 30px;
   line-height: 0.2;
   box-shadow: 5px 8px 5px 1px #EDE9E9;
-  font-family: Shrikhand;
   border-radius: 40px 40px 25px 25px; }
 
 .menu-image {
@@ -361,7 +379,6 @@ small {
   display: block;
   width: 445px;
   height: 90px;
-  line-height: -10px;
   font-size: 18px;
   font-family: Arial;
   text-decoration: none;
@@ -417,13 +434,7 @@ small {
 
 .price {
   position: relative;
-  right: 37px;
-  bottom: 20px;
+  right: 40px;
+  bottom: 40px;
   text-align: right;
   padding-right: 40px; }
-
-.ds-price {
-  position: relative;
-  text-align: right;
-  right: 78px;
-  bottom: 50px; }

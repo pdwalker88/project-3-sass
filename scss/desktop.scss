@@ -109,14 +109,23 @@ header {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
 footer {
-	background-color: $background_color_2;
-	border: medium;
-	color: $color_1;
-	font-family: $font_family_2;
-	padding: 85px;
-	line-height: 1.5;
-	text-align: center;
+  background-color: $background_color_2;
+  color: $color_1;
+  padding: 35px;
+  line-height: 1.5;
+}
+footer a {
+  color: $color_1;
+  text-decoration: none;
+  font-family: $font_family_2;
+  display: block;
+}
+.footer-icon {
+  color: $color_1;
+  display: inline-block;
+  width: 15px; 
 }
 
 a {
@@ -518,11 +527,4 @@ small {
 	bottom: 20px;
 	text-align: right;
 	padding-right: 40px;
-}
-
-.ds-price {
-	position: relative;
-	text-align: right;
-	right: 78px;
-	bottom: 50px;
 }

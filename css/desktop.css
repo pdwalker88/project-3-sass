@@ -87,12 +87,20 @@ header {
 
 footer {
   background-color: #383B3D;
-  border: medium;
   color: white;
+  padding: 35px;
+  line-height: 1.5; }
+
+footer a {
+  color: white;
+  text-decoration: none;
   font-family: Calibri;
-  padding: 85px;
-  line-height: 1.5;
-  text-align: center; }
+  display: block; }
+
+.footer-icon {
+  color: white;
+  display: inline-block;
+  width: 15px; }
 
 a {
   text-decoration: none; }
@@ -448,9 +456,3 @@ small {
   bottom: 20px;
   text-align: right;
   padding-right: 40px; }
-
-.ds-price {
-  position: relative;
-  text-align: right;
-  right: 78px;
-  bottom: 50px; }
