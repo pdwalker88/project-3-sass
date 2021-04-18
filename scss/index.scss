@@ -3,6 +3,7 @@ $font_family_1: Lucida Bright;
 $font_family_2: Calibri;
 $font_family_3: sans-serif;
 $font_family_4: helvetica;
+$font_family_5: "Roboto";
 $background_color_1: #FBFBFB;
 $background_color_2: #383B3D;
 $background_color_3: lightblue;
@@ -27,12 +28,23 @@ header {
 a {
 	text-decoration: none;
 }
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 strong {
 	font-family: $font_family_3;
 	font-size: 23px;
 }
 i {
 	padding-right: 14px;
+}
+
+h3 {
+	font-family: $font_family_5;
 }
 
 p {
