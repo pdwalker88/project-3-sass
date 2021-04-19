@@ -183,15 +183,18 @@ small {
 	height: 20px;
 	width: 100px;
 }
+
 #btn-group {
 	font-family: $font_family_3;
 	text-align: auto;
 	display: block;
+	padding: 3%;
+	background-color: white;
 }
 
 .btn-center{
-	width: 30%;
 	display: grid;
+	width: 30%;
 	margin: 50px;
 }
 
@@ -203,7 +206,7 @@ small {
 	padding: 20px;
 	border: none;
 	display: center;
-	width: 330px;
+	width: 300px;
 	border: none;
 	border-radius: 25px;
 	height: 70px;

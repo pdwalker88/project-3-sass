@@ -153,11 +153,13 @@ small {
 #btn-group {
   font-family: sans-serif;
   text-align: auto;
-  display: block; }
+  display: block;
+  padding: 3%;
+  background-color: white; }
 
 .btn-center {
-  width: 30%;
   display: grid;
+  width: 30%;
   margin: 50px; }
 
 .btn-primary {
@@ -168,7 +170,7 @@ small {
   padding: 20px;
   border: none;
   display: center;
-  width: 330px;
+  width: 300px;
   border: none;
   border-radius: 25px;
   height: 70px;
