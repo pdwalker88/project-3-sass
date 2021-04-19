@@ -153,8 +153,7 @@ small {
 #btn-group {
   font-family: sans-serif;
   text-align: auto;
-  display: block;
-  padding: 3%; }
+  display: block; }
 
 .btn-center {
   width: 30%;
