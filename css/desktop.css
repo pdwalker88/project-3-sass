@@ -103,7 +103,8 @@ footer a {
   width: 15px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 strong {
   font-family: Arial;
