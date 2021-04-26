@@ -190,8 +190,7 @@ small {
   padding-bottom: 60px; }
 
 #restaurant-text {
-  text-align: center;
-  padding: 5%; }
+  text-align: center; }
 
 .image-container {
   background-color: white;
@@ -214,57 +213,47 @@ small {
   position: relative;
   right: 30px; }
 
-.fa-heart {
-  position: relative;
-  left: 260px;
-  top: -40px; }
+.restaurant-card {
+  position: relative; }
 
-.far fa-heart {
-  position: relative;
-  left: 275px;
-  top: -30px; }
+.heart-home {
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+  .heart-home .outline {
+    opacity: 1; }
+  .heart-home .solid {
+    opacity: 0; }
 
-.heart-home:hover {
-  background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text; }
+.heart-home:hover .outline {
+  opacity: 0; }
 
-.heart-home:hover .far,
-.heart-home .fa {
-  display: none;
-  background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text; }
+.heart-home:hover .solid {
+  opacity: 1;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
-.heart-home:hover .fa {
-  display: block; }
+.restaurant-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15%; }
 
 /*----menu css----*/
 .restaurant-name {
   text-align: left;
-  padding-left: 20px;
+  padding-left: 45px;
   font-family: Shrikhand; }
 
-#heart-id {
-  position: relative;
-  left: 0px;
-  top: 0px; }
+#restaurant-name {
+  text-align: left;
+  padding-left: 25px;
+  font-family: Shrikhand; }
 
-.heart-menu {
-  position: relative;
-  float: right;
-  display: inline; }
-
-.heart-menu:hover {
-  background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text; }
-
-.heart-menu:hover .far,
-.heart-menu .fa {
-  display: none;
-  background-image: -webkit-gradient(168deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text; }
-
-.heart-menu:hover .fa {
-  display: block; }
+.menu-heart {
+  top: 33px;
+  right: 30px; }
 
 .flex-container {
   display: flex;
@@ -277,20 +266,6 @@ small {
 
 .fa-arrow-left {
   color: black; }
-
-.fa-heart {
-  position: relative; }
-
-.far fa-heart {
-  position: relative; }
-
-#heart-box {
-  position: relative;
-  right: 75px;
-  top: -15px;
-  margin: 0;
-  padding: 0;
-  color: #c7c3c8; }
 
 .menu-page-image {
   height: 300px;
