@@ -189,13 +189,11 @@ small {
 	text-align: auto;
 	display: block;
 	padding: 3%;
-	background-color: white;
 }
 
 .btn-center{
-	display: grid;
-	width: 30%;
-	margin: 50px;
+	position: relative;
+	margin: 10px;
 }
 
 .btn-primary {
@@ -206,7 +204,7 @@ small {
 	padding: 20px;
 	border: none;
 	display: center;
-	width: 300px;
+	width: 295px;
 	border: none;
 	border-radius: 25px;
 	height: 70px;
