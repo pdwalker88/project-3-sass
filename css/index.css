@@ -35,9 +35,13 @@ h3 {
 p {
   font-family: helvetica; }
 
-body {
+html, body {
   position: static;
-  margin: 0 auto; }
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 #order {
   font-size: 17.5px;
