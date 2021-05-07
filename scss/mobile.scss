@@ -19,10 +19,13 @@ div {
   font-family: Roboto;
 }
 
+main {
+	justify-content: center;
+}
+
 body {
 	margin: 0 auto;
 	position: relative;
-	width: 100%;
 }
 
 .loading-container {
@@ -184,11 +187,15 @@ small {
 	width: 100px;
 }
 
-#btn-group {
+.how {
+	padding: 5%;
+}
+
+.btn-group {
 	font-family: $font_family_3;
 	text-align: auto;
-	display: block;
-	padding: 3%;
+	padding: 10%;
+	padding-left: 10%;
 }
 
 .btn-center{
@@ -283,8 +290,8 @@ small {
 
 .restaurant-wrapper {
 	display: center;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
 }
 
 

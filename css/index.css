@@ -35,7 +35,7 @@ h3 {
 p {
   font-family: helvetica; }
 
-html, body {
+body {
   position: static;
   margin: 0 auto;
   top: 0;
@@ -62,7 +62,7 @@ html, body {
   height: 20px;
   width: 100px; }
 
-#btn-group {
+.btn-group {
   font-family: sans-serif;
   text-align: auto;
   display: block;
@@ -77,13 +77,3 @@ html, body {
   color: black;
   display: block;
   transition: all 0.5s; }
-
-.restaurants {
-  background-color: purple;
-  text-indent: 30px; }
-
-.section {
-  font-family: Lucida Bright;
-  width: 45px;
-  padding-bottom: 3px;
-  border-bottom: solid #99E2D0; }
