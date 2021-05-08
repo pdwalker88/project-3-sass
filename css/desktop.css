@@ -12,6 +12,7 @@ main {
   justify-content: center; }
 
 body {
+  background-color: white;
   position: absolute;
   left: 20%;
   right: 20%; }
@@ -241,23 +242,17 @@ small {
   padding: 90px; }
 
 /*----menu css----*/
-.second {
-  position: absolute;
-  width: 990px;
-  height: 400px; }
-
 .restaurant-name {
-  text-align: center;
   font-family: Shrikhand; }
 
 #restaurant-name {
-  text-align: left;
-  padding-left: 280px;
+  left: 25%;
   font-family: Shrikhand; }
 
 .menu-heart {
-  top: 33px;
-  right: 300px; }
+  position: relative;
+  left: 235px;
+  bottom: 60px; }
 
 .flex-container {
   display: flex;
@@ -271,22 +266,27 @@ small {
 .fa-arrow-left {
   color: black; }
 
+.rest-image {
+  position: relative; }
+
 .menu-page-image {
   position: relative;
   height: 300px;
-  width: 474px;
-  left: 250px;
+  width: 100%;
   border-radius: 40px 40px 0px 0px; }
 
 #background {
   background-color: #F7F7F7;
   position: absolute;
   top: 345px;
-  border-radius: 40px 40px 0px 0px;
-  z-index: 2; }
+  right: 0%;
+  left: 0%;
+  border-radius: 40px 40px 0px 0px; }
+
+.nc {
+  background-color: #F7F7F7; }
 
 .menu-container {
-  width: 970px;
   font-size: 15px;
   padding-top: 10px;
   padding-left: 10px;
@@ -296,7 +296,7 @@ small {
 .part {
   font-family: Lucida Bright;
   position: relative;
-  left: 450px;
+  left: 45%;
   padding-top: 30px; }
 
 .underline {

@@ -30,7 +30,6 @@ main {
 body {
 	position: absolute;
     left: 5%;
-    right: 5%;
 }
 
 .loading-container {
@@ -353,7 +352,8 @@ small {
 #background {
 	background-color: #F7F7F7;
 	position: absolute;
-	width: 474px;
+	right: 0%;
+	left: 0%;
 	border-radius: 40px 40px 0px 0px;
 }
 
