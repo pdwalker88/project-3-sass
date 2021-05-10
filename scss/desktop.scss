@@ -19,28 +19,13 @@ div {
   font-family: Roboto;
 }
 
-html {
-	background-color: #B1B1B1;
-}
-
-main {
-	justify-content: center;
-}
-
-body {
-	background-color: white;
-	position: absolute;
-    left: 20%;
-    right: 20%;
-}
-
 .loading-container {
   position: center;
   opacity:0;
   animation: mymove 1s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
-  background-color: white;
+  background-color: $background_color_2;
 }
 
 @keyframes mymove {
@@ -192,6 +177,8 @@ small {
 
 .how {
 	text-align: center;
+	background-color: white;
+	padding: .5%
 }
 
 .btn-group {
@@ -206,7 +193,7 @@ small {
 .btn-primary {
 	font-family: $font_family_4;
 	background-color: #F7F7F7;
-	font-size: 15px;
+	// font-size: 15px;
 	text-align: left;
 	padding: 30px;
 	width: 100%;
@@ -304,17 +291,20 @@ small {
 
 .restaurant-name {
 	font-family: Shrikhand;
+	text-align: center;
+	padding-top: 15px;
 }
 
 #restaurant-name {
-	left: 25%;
 	font-family: Shrikhand;
+	text-align: center;
+	padding-top: 15px;
 }
 
 .menu-heart {
 	position: relative;
 	left: 235px;
-	bottom: 60px;
+	bottom: 70px;
 }
 
 .flex-container {
@@ -334,6 +324,7 @@ small {
 
 .rest-image{
 	position: relative;
+	background-color: white;
 }
 
 .menu-page-image {
@@ -343,32 +334,22 @@ small {
 	border-radius: 40px 40px 0px 0px
 }
 
-#background {
-	background-color: #F7F7F7;
-	position: absolute;
-	top: 345px;
-	right: 0%;
-	left: 0%;
-	border-radius: 40px 40px 0px 0px;
-}
-
 .nc {
 	background-color: #F7F7F7;
 }
 
 .menu-container {
-	font-size: 15px;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: center;
+	position: relative;
+	bottom: 50px;
+	width: 100%;
+	background-color: #F7F7F7;
+	border-radius: 40px 40px 0px 0px;
 }
 
 .part {
 	 font-family: $font_family_1;
 	 position: relative;
-	 left: 45%;
-	 padding-top: 30px;
+	 left: 50%;
 }
 
 .underline {
@@ -409,6 +390,7 @@ small {
 #btn-container {
 	padding-top: 100px;
 	padding-bottom: 25px;
+	text-align: center;
 }
 
 #order-btn {
@@ -443,6 +425,7 @@ small {
   color: #333;
   letter-spacing: 2px;
   position: relative;
+  left: 30px;
   transition: all .35s;
 }
 

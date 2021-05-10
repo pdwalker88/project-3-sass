@@ -206,7 +206,7 @@ small {
 .menu-image {
   padding-top: 0%;
   border-radius: 20px;
-  width: 340px;
+  width: 100%;
   height: 180px;
   position: relative;
   right: 30px; }
@@ -238,18 +238,21 @@ small {
   align-items: center; }
 
 /*----menu css----*/
+.rest-image {
+  width: 100%; }
+
 .restaurant-name {
   text-align: left;
-  padding-left: 75px;
+  padding-left: 15%;
   font-family: Shrikhand; }
 
 #restaurant-name {
   text-align: left;
-  padding-left: 75px;
+  padding-left: 70px;
   font-family: Shrikhand; }
 
 .menu-heart {
-  right: 30px; }
+  bottom: 57px; }
 
 .flex-container {
   display: flex;
@@ -265,27 +268,24 @@ small {
 
 .menu-page-image {
   height: 300px;
-  width: 474px;
+  width: 100%;
   top: 50px;
   position: relative; }
 
-#background {
-  background-color: #F7F7F7;
-  position: absolute;
-  border-radius: 40px 40px 0px 0px;
-  z-index: 2; }
+.nc {
+  background-color: #F7F7F7; }
 
 .menu-container {
-  font-size: 15px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center; }
+  position: absolute;
+  width: 100%;
+  background-color: #F7F7F7;
+  border-radius: 40px 40px 0px 0px; }
 
 .part {
   font-family: Lucida Bright;
   position: relative;
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-left: 30px; }
 
 .underline {
   background-color: #99E2D0;
@@ -332,7 +332,8 @@ small {
 
 #btn-container {
   padding-top: 100px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  text-align: center; }
 
 #order-btn {
   font-size: 17.5px;
@@ -356,7 +357,7 @@ small {
   margin: auto;
   box-shadow: 0.7px 5px #EDE9E9;
   display: block;
-  width: 445px;
+  width: 90%;
   height: 90px;
   font-size: 18px;
   font-family: Arial;
@@ -413,7 +414,7 @@ small {
 
 .price {
   position: relative;
-  right: 40px;
+  right: 10%;
   bottom: 40px;
   text-align: right;
   padding-right: 40px; }
