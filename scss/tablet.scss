@@ -134,7 +134,7 @@ p {
 	font-family: $font_family_4;
 	text-align: left;
 	letter-spacing: -1px;
-	line-height:10px;
+	line-height: 17px;
 }
 
 small {
@@ -297,11 +297,12 @@ small {
 	font-family: Shrikhand;
 	text-align: center;
 	padding-top: 5px;
+	font-size: 16px;
 }
 
 .menu-heart {
 	position: relative;
-	left: 235px;
+	left: 200px;
 	bottom: 70px;
 }
 
@@ -486,8 +487,16 @@ small {
 
 .price {
 	position: relative;
-	right: 37px;
-	bottom: 20px;
+	right: 9%;
+	bottom: 30px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.double-price {
+	position: relative;
+	right: 9%;
+	bottom: 50px;
 	text-align: right;
 	padding-right: 40px;
 }

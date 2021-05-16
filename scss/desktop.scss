@@ -134,7 +134,7 @@ p {
 	font-family: $font_family_4;
 	text-align: left;
 	letter-spacing: -1px;
-	line-height:10px;
+	// line-height: 10px;
 }
 
 small {
@@ -420,7 +420,7 @@ small {
   display: block;
   width: 445px;
   height: 90px;
-  line-height:-10px;
+  line-height: 15px;
   font-size: 18px;
   font-family: Arial;
   text-decoration: none;
@@ -489,7 +489,15 @@ small {
 .price {
 	position: relative;
 	right: 37px;
-	bottom: 20px;
+	bottom: 30px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.double-price {
+	position: relative;
+	right: 37px;
+	bottom: 30px;
 	text-align: right;
 	padding-right: 40px;
 }
