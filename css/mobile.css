@@ -158,9 +158,9 @@ small {
 
 .btn-group {
   font-family: sans-serif;
-  text-align: auto;
-  padding: 10%;
-  padding-left: 10%; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .btn-center {
   position: relative;
