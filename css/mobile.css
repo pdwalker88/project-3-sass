@@ -223,10 +223,12 @@ small {
     opacity: 0; }
 
 .heart-home:hover .outline {
-  opacity: 0; }
+  opacity: 0;
+  transition: 1000ms; }
 
 .heart-home:hover .solid {
   opacity: 1;
+  transition: 1000ms;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }

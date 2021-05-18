@@ -277,9 +277,11 @@ small {
 .heart-home:hover {
     .outline {
     	opacity: 0;
+    	transition: 1000ms;
     }
     .solid {
     	opacity: 1;
+    	transition: 1000ms;
     	background: -webkit-linear-gradient(#FF79DA, #9356DC);
   		-webkit-background-clip: text;
   		-webkit-text-fill-color: transparent;
